@@ -48,7 +48,16 @@ Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 */
 
+function isPal(x){
+    strX = x.toString()
+    reversedString = ''
+    for (let i = strX.length - 1; i >= 0; i--){
+    
+    reversedString += strX[i]
+}
 
-//if an integer return true
-//else
-//return false
+return strX === reversedString
+
+}
+
+console.log(isPal(121))
